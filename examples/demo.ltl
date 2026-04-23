@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_portfolio_stats
+
+import std::io
+use ltl_portfolio_stats as lib
+
+fn main() {
+    io::println("ltl_portfolio_stats demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
